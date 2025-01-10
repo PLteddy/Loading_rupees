@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Main Page</title>
+  <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
   <link href="https://fonts.googleapis.com/css2?family=Gabarito&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script src="script.js"></script>
@@ -29,7 +30,7 @@
     <section>
                 <div class="content">
                     <div class="left-section">
-                     <img src="assets/0002.png" alt="Esquisses du rubis">
+                     <img src="assets/choix_picto.jpg" alt="Esquisses des idées dont celle du rubis">
                     </div>
 
                      <div class="right-section">
@@ -38,26 +39,77 @@
                              J'ai voulu réaliser une animation de chargement pour ma série de jeux préférée et après des recherches des différents symboles, mon choix s'est porté sur le rubis. Ce dernier est un symbole bien connu car il est la monnaie du jeu de plus il est facilement identifiable et visuellement attrayant.
                         </p>
                     </div>
-            <h3>PICTO</h3>
+            <h2>PICTO</h2>
         </div>
         </section>
         <section>
             <div class="content">
+                <h3>INSPI</h3>
                 <div class="left-section2">
-                    <h1>CHOIX DU PICTOGRAMME</h1>
+                    <h1>INSPIRATION</h1>
                     <p>
-                         J'ai voulu réaliser une animation de chargement pour ma série de jeux préférée et après des recherches des différents symboles, mon choix s'est porté sur le rubis. Ce dernier est un symbole bien connu car il est la monnaie du jeu de plus il est facilement identifiable et visuellement attrayant.
-                    </p>
+                        Je voulais partir sur une idée  de rotation sur lui-même pour rappeler un mouvement circulaire qui est ordinairement représentés par un cercle. 
+                        Je voulais aussi un changement de couleur pour qu’il y ait un changement qui accompagne la rotation.  </p> 
                 </div>
                  <div class="right-section2">
-                    <img src="assets/0002.png" alt="Esquisses du rubis">
-
+                    <img src="assets/loading_circle.gif" alt="Esquisses du rubis">
+                    <img src="assets/Dots Loading Bar.gif" alt="Esquisses du rubis">
                 </div>
-        <h3>PICTO</h3>
+
     </div>
+
     </section>
+    <section>
+        <div class="content">
+            <div class="left-section">
+            <video width="100%" controls>
+                <source src="assets/Composition.mp4" type="video/mp4">
+                     Your browser does not support the video tag.
+                </video>
+            </div>
+
+             <div class="right-section">
+                <h1>TRAVAIL</h1>
+                <p>
+                    J’ai d’abord réalisé l’animation que je voulais sur blender sans les couleurs car je voulais les modifier sur after effects.
+                    J’ai pris les différentes images clés donc celle où il y avait les mouvements importants pour les tracer sur illustrator et pouvoir donc les avoir en vecteur. 
+                    Sur after effects j’ai pu choisir les couleurs que je voulais et les appliquer directement sur mes calques vectorisés. 
+                </p>
+            </div>
+    <h4>TRAVAIL</h4>
+</div>
+</section>
 
 
+<section>
+    <div class="content">
+        <h5>ANIM</h5>
+        <div class="left-section2">
+            <h1>L'ANIMATION</h1>
+            <p>
+                Après export sur lottie l'animation ressemble donc à ça.  </p> 
+        </div>
+         <div class="right-section2">
+            <dotlottie-player
+            src="https://lottie.host/360519d5-c3d7-413a-9fa4-0efa60f08c5b/76me0w5FBh.lottie"
+            background="transparent"
+            speed="1"
+            style="width: 350px; height: 350px"
+            loop
+            autoplay>
+          </dotlottie-player>
+        </div>
 
+</div>
+</section>
+<footer>
+    <div class="contact-info">
+      <p>CONTACT</p>
+      <p>yussera.sebdaoui@gmail.com</p>
+      <p class="copyright">© 2025 -</p>
+      <h1 class="loading-footer">LOADING</h1>
+    </div>
+
+  </footer>
 </body>
 </html>
