@@ -249,12 +249,14 @@ body {
   .contact-info {
     text-align: left;
     justify-content: center;
+    z-index: 2;
   }
   
   .loading-footer {
     color: #F5F5F5;
     position: absolute;
     bottom: -150%;
+    left: 50%;
     transform: translateX(-50%);
     text-align: center;
     clip-path: inset(0 0 50% 0);
