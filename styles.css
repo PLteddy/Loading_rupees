@@ -7,7 +7,10 @@ body {
     font-family: 'Gabarito', sans-serif;
     overflow-x: hidden;
   }
-  
+
+  html {
+    scroll-behavior: smooth;
+}
   .loading-container {
     display: flex;
     flex-direction: column;
@@ -267,3 +270,40 @@ body {
     z-index: 1;
     opacity: 70%;
 }
+
+
+  /* Style de la miniature */
+  .image-miniature {
+    max-width: 400px;
+    cursor: pointer;
+  }
+
+  /* Style du modal */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  /* Contenu du modal */
+  .modal-contenu {
+    margin: auto;
+    display: block;
+    max-width: 50%;
+  }
+
+  /* Bouton pour fermer le modal */
+  .fermer {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+  }

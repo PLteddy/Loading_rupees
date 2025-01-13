@@ -7,18 +7,17 @@
   <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
   <link href="https://fonts.googleapis.com/css2?family=Gabarito&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <script src="script.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
 
 </head>
 <body>
     <div class="navbar">
         <div class="menu">
-            <a href="#">TP Loading</a>
-            <a href="#">Choix</a>
-            <a href="#">Inspiration</a>
-            <a href="#">Travail</a>
-            <a href="#">L'animation</a>
+            <a href="">TP Loading</a>
+            <a href="#choix">Choix</a>
+            <a href="#inspiration">Inspiration</a>
+            <a href="#travail">Travail</a>
+            <a href="#animation">L'animation</a>
         </div>
         <div class="hamburger">
             <span></span>
@@ -27,29 +26,29 @@
         </div>
     </div>
     
-    <section>
+    <section id="choix">
                 <div class="content">
                     <div class="left-section">
-                     <img src="assets/choix_picto.jpg" alt="Esquisses des idées dont celle du rubis">
+                        <img src="assets/choix_picto.jpg" alt="Esquisses des idées dont celle du rubis" id="image-cliquable">
                     </div>
 
                      <div class="right-section">
                         <h1>CHOIX DU PICTOGRAMME</h1>
                         <p>
-                             J'ai voulu réaliser une animation de chargement pour ma série de jeux préférée et après des recherches des différents symboles, mon choix s'est porté sur le rubis. Ce dernier est un symbole bien connu car il est la monnaie du jeu de plus il est facilement identifiable et visuellement attrayant.
+                            J'ai souhaité créer une animation de chargement pour la licence de jeux The Legend of Zelda. Après avoir exploré différents symboles emblématiques de la série, j'ai choisi le rubis. Ce choix s'est imposé car le rubis, en tant que monnaie du jeu, est à la fois facilement reconnaissable et visuellement attrayant.
                         </p>
                     </div>
             <h2>PICTO</h2>
         </div>
         </section>
-        <section>
+        <section id="inspiration">
             <div class="content">
                 <h3>INSPI</h3>
                 <div class="left-section2">
                     <h1>INSPIRATION</h1>
                     <p>
-                        Je voulais partir sur une idée  de rotation sur lui-même pour rappeler un mouvement circulaire qui est ordinairement représentés par un cercle. 
-                        Je voulais aussi un changement de couleur pour qu’il y ait un changement qui accompagne la rotation.  </p> 
+                        Je souhaitais intégrer une animation de rotation pour évoquer un mouvement circulaire. Pour moi ces mouvements sont plus doux et agréables à l'œil, contrairement à des mouvements linéaires qui peuvent paraître brusques.
+                        Cette rotation serait accompagnée d'un changement progressif de couleur afin d'ajouter une dynamique visuelle qui enrichira l'effet global de l'animation.  </p> 
                 </div>
                  <div class="right-section2">
                     <img src="assets/loading_circle.gif" alt="Esquisses du rubis">
@@ -59,7 +58,7 @@
     </div>
 
     </section>
-    <section>
+    <section id="travail">
         <div class="content">
             <div class="left-section">
             <video width="100%" controls>
@@ -71,9 +70,10 @@
              <div class="right-section">
                 <h1>TRAVAIL</h1>
                 <p>
-                    J’ai d’abord réalisé l’animation que je voulais sur blender sans les couleurs car je voulais les modifier sur after effects.
-                    J’ai pris les différentes images clés donc celle où il y avait les mouvements importants pour les tracer sur illustrator et pouvoir donc les avoir en vecteur. 
-                    Sur after effects j’ai pu choisir les couleurs que je voulais et les appliquer directement sur mes calques vectorisés. 
+                    J'ai d'abord conçu l'animation souhaitée sur Blender, sans intégrer les couleurs, car je prévoyais de les ajuster ultérieurement dans After Effects.
+                    Ensuite, j'ai sélectionné les images clés correspondant aux mouvements essentiels pour les tracer sur Illustrator et les convertir en vecteurs.
+                    Enfin, dans After Effects, j'ai pu choisir les couleurs désirées et les appliquer directement sur mes calques vectorisés.
+                    La vidéo ci-contre est pour illustrer mon attention c'est mon export blender modifié avec after effects mais pas encore vectorisé.
                 </p>
             </div>
     <h4>TRAVAIL</h4>
@@ -81,13 +81,13 @@
 </section>
 
 
-<section>
+<section id="animation">
     <div class="content">
         <h5>ANIM</h5>
         <div class="left-section2">
             <h1>L'ANIMATION</h1>
             <p>
-                Après export sur lottie l'animation ressemble donc à ça.  </p> 
+                Après export sur lottie l'animation ressemble donc à cela.  </p> 
         </div>
          <div class="right-section2">
             <dotlottie-player
@@ -99,9 +99,14 @@
             autoplay>
           </dotlottie-player>
         </div>
-
 </div>
 </section>
+<div id="modal-image" class="modal">
+    <span class="fermer">&times;</span>
+    <img class="modal-contenu" id="image-agrandie">
+  </div>
+
+
 <footer>
     <div class="contact-info">
       <p>CONTACT</p>
@@ -111,5 +116,8 @@
     </div>
     <h1 class="loading-footer">LOADING</h1>
   </footer>
+
+
+  <script src="script.js"></script>
 </body>
 </html>
