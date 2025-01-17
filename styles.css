@@ -327,7 +327,7 @@ a {
   .cursor-dot {
       width: 8px;
       height: 8px;
-      background-color: #C0AA74;
+      background-color:rgb(148, 116, 192);
   }
   
   .cursor-dot-outline {
