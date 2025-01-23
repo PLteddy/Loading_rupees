@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Gabarito&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
 </head>
 <body>
  
@@ -91,16 +91,22 @@
             <p>
                 Après export sur lottie l'animation ressemble donc à cela.  </p> 
         </div>
-         <div class="right-section2">
-            <dotlottie-player
-            src="https://lottie.host/360519d5-c3d7-413a-9fa4-0efa60f08c5b/76me0w5FBh.lottie"
-            background="transparent"
-            speed="1"
-            style="width: 350px; height: 350px"
-            loop
-            autoplay>
-          </dotlottie-player>
-        </div>
+        <div class="right-section2">
+            <div id="lottie-animation-right" style="width: 350px; height: 350px;"></div>
+          </div>
+          
+          <script>
+            document.addEventListener("DOMContentLoaded", () => {
+              const containerRight = document.getElementById("lottie-animation-right");
+              lottie.loadAnimation({
+                container: containerRight, 
+                renderer: 'svg',
+                loop: true,
+                autoplay: true,
+                path: 'data.json' 
+              });
+            });
+          </script>          
 </div>
 </section>
 <div id="modal-image" class="modal">

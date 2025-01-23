@@ -4,10 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Page de Chargement</title>
-  <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
   <link href="https://fonts.googleapis.com/css2?family=Gabarito&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
   <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const container = document.getElementById("lottie-animation");
+      lottie.loadAnimation({
+        container: container,
+        renderer: 'svg', 
+        loop: true,
+        autoplay: true,
+        path: 'data.json' 
+      });
+    });
+
     // Redirection après 15 secondes
     setTimeout(() => {
       window.location.href = "main.html";
@@ -16,19 +27,8 @@
 </head>
 <body>
   <div class="loading-container">
-    <div class="loading-animation">
-      <dotlottie-player
-        src="https://lottie.host/360519d5-c3d7-413a-9fa4-0efa60f08c5b/76me0w5FBh.lottie"
-        background="transparent"
-        speed="1"
-        style="width: 350px; height: 350px"
-        loop
-        autoplay>
-      </dotlottie-player>
-    </div>
-
+    <div class="loading-animation" id="lottie-animation" style="width: 350px; height: 350px;"></div>
     <div class="loading-text half-hidden">LOADING</div>
   </div>
-
 </body>
 </html>
